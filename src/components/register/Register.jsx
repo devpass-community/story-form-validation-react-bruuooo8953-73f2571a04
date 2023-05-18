@@ -25,7 +25,7 @@ const Register = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // TODO
+    return state !== '' ? setSuccessMsg('You have successfully registered') : setErrorMsg('All the fields are required.')
   };
 
   return (
